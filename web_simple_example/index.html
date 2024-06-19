@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").mousedown(function(){
+    alert("Hello!");
+  });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p2").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<h2>This is a smaller Heading</h2>
+<p>This is a paragraph...<br>with break<br>lines</p>
+
+<h3> item list </h3>
+<ul>
+    <li>item 1</li>
+    <li style="color: blue">item 2 and style</li>
+    <li><a href="https://www.google.com">with link</a></li>
+</ul>
+
+<h3>An image with link</h3>
+<a href="https://github.com/gorisanson/pikachu-volleyball">
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png">
+</a>
+
+<p class="large">style from "/style.css"</p>
+<p id="p1">點一下會有alert</p>
+<p id="p2">點兩下會不見</p>
+</body>
+</html>
